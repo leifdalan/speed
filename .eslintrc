@@ -1,0 +1,40 @@
+{
+  "parser": "babel-eslint",
+  "extends": ["airbnb", "prettier", "plugin:jest/recommended"],
+  "plugins": ["prettier"],
+  "env": {
+    "browser": true,
+    "node": true
+  },  
+  "globals": {
+    "cy": false,
+    "Cypress": false,
+    "before": false
+  },
+  "rules": {
+    "func-names": ["error", "never"],
+    "prettier/prettier": ["error"],
+    "import/order": ["error", {"groups": ["builtin", "external", "parent", "sibling", "index"], "newlines-between" : "always"}],
+    "jsx-a11y/click-events-have-key-events": "off",
+    "jsx-a11y/no-static-element-interactions": "off",
+    "no-console": "error"
+  },
+  "overrides": [
+    {
+      "files": "**/__tests__/*",
+      "rules": {
+        "no-unused-expressions": "off",
+        "no-undef": "off",
+        "react/jsx-filename-extension": "off",
+        "jsx-a11y/anchor-is-valid": "off",
+        "react/forbid-foreign-prop-types": "off"
+  
+      }
+    }, {
+      "files": "cypress/**/*",
+      "rules": {
+        "jest/valid-expect": "off"
+      } 
+    }
+  ]
+}
