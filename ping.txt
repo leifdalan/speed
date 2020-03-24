@@ -6,3 +6,27 @@
 11:51:40 AM - 16.34ms
 11:51:41 AM - 10.779ms
 11:51:42 AM - 10.924ms
+11:54:41 AM - ERROR! {"host":"google.com","alive":false,"output":"PING google.com (216.58.217.46): 56 data bytes\n\n--- google.com ping statistics ---\n1 packets transmitted, 0 packets received, 100.0% packet loss\n","time":"unknown","min":"unknown","max":"unknown","avg":"unknown","stddev":"unknown","numeric_host":"216.58.217.46"}
+11:54:42 AM - ERROR! {"host":"google.com","alive":false,"output":"PING google.com (216.58.217.46): 56 data bytes\n\n--- google.com ping statistics ---\n1 packets transmitted, 0 packets received, 100.0% packet loss\n","time":"unknown","min":"unknown","max":"unknown","avg":"unknown","stddev":"unknown","numeric_host":"216.58.217.46"}
+11:54:42 AM - 10.291ms
+11:54:43 AM - ERROR! {"host":"google.com","alive":false,"output":"PING google.com (216.58.217.46): 56 data bytes\n\n--- google.com ping statistics ---\n1 packets transmitted, 0 packets received, 100.0% packet loss\n","time":"unknown","min":"unknown","max":"unknown","avg":"unknown","stddev":"unknown","numeric_host":"216.58.217.46"}
+11:54:43 AM - 14.784ms
+11:54:45 AM - 10.528ms
+11:54:46 AM - ERROR! {"host":"google.com","alive":false,"output":"PING google.com (216.58.217.46): 56 data bytes\n\n--- google.com ping statistics ---\n1 packets transmitted, 0 packets received, 100.0% packet loss\n","time":"unknown","min":"unknown","max":"unknown","avg":"unknown","stddev":"unknown","numeric_host":"216.58.217.46"}
+11:54:46 AM - 12.714ms
+11:54:47 AM - 8.991ms
+11:54:49 AM - 17.154ms
+11:54:50 AM - ERROR! {"host":"google.com","alive":false,"output":"PING google.com (216.58.217.46): 56 data bytes\n\n--- google.com ping statistics ---\n1 packets transmitted, 0 packets received, 100.0% packet loss\n","time":"unknown","min":"unknown","max":"unknown","avg":"unknown","stddev":"unknown","numeric_host":"216.58.217.46"}
+11:54:50 AM - 32.207ms
+11:54:51 AM - 9.626ms
+11:54:54 AM - ERROR! {"host":"google.com","alive":false,"output":"PING google.com (216.58.217.46): 56 data bytes\n\n--- google.com ping statistics ---\n1 packets transmitted, 0 packets received, 100.0% packet loss\n","time":"unknown","min":"unknown","max":"unknown","avg":"unknown","stddev":"unknown","numeric_host":"216.58.217.46"}
+11:54:55 AM - ERROR! {"host":"google.com","alive":false,"output":"PING google.com (216.58.217.46): 56 data bytes\n\n--- google.com ping statistics ---\n1 packets transmitted, 0 packets received, 100.0% packet loss\n","time":"unknown","min":"unknown","max":"unknown","avg":"unknown","stddev":"unknown","numeric_host":"216.58.217.46"}
+11:54:56 AM - ERROR! {"host":"google.com","alive":false,"output":"PING google.com (216.58.217.46): 56 data bytes\n\n--- google.com ping statistics ---\n1 packets transmitted, 0 packets received, 100.0% packet loss\n","time":"unknown","min":"unknown","max":"unknown","avg":"unknown","stddev":"unknown","numeric_host":"216.58.217.46"}
+11:54:57 AM - ERROR! {"host":"google.com","alive":false,"output":"PING google.com (216.58.217.46): 56 data bytes\n\n--- google.com ping statistics ---\n1 packets transmitted, 0 packets received, 100.0% packet loss\n","time":"unknown","min":"unknown","max":"unknown","avg":"unknown","stddev":"unknown","numeric_host":"216.58.217.46"}
+11:54:57 AM - 15.423ms
+11:54:58 AM - ERROR! {"host":"google.com","alive":false,"output":"PING google.com (216.58.217.46): 56 data bytes\n\n--- google.com ping statistics ---\n1 packets transmitted, 0 packets received, 100.0% packet loss\n","time":"unknown","min":"unknown","max":"unknown","avg":"unknown","stddev":"unknown","numeric_host":"216.58.217.46"}
+11:54:58 AM - 8.949ms
+11:54:59 AM - 17.75ms
+11:55:00 AM - 10.778ms
+11:55:01 AM - 11.435ms
+11:55:03 AM - 16.975ms
