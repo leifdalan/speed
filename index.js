@@ -18,21 +18,25 @@ const speedInterval = setInterval(() => {
     successfulSpeedtests += 1;
     cumulativeDownload += data.speeds.download;
     cumulativeUpload += data.speeds.upload;
+    const output = `\n${new Date().toLocaleTimeString()} - ${data.speeds.download} / ${
+      data.speeds.upload
+    }`;
     fs.appendFileSync(
       'speed.txt',
-      `\n${new Date().toLocaleTimeString()} - ${data.speeds.download} / ${
-        data.speeds.upload
-      }`,
+      output,
     );
+    console.log(output);
   });
   test.on('error', error => {
     errorSpeedtests += 1;
+    const output = `\n${new Date().toLocaleTimeString()} - ${JSON.stringify(error)}`;
     fs.appendFileSync(
       'speed.txt',
-      `\n${new Date().toLocaleTimeString()} - ${JSON.stringify(error)}`,
+      output,
     );
+    console.log(output)
   });
-}, 1000 * 60);
+}, 1000 * 60 * 60);
 
 const pingInterval = setInterval(async () => {
   try {
@@ -40,19 +44,23 @@ const pingInterval = setInterval(async () => {
     if (res.alive) {
       successfulPings += 1;
       cumulativePing += res.time;
+      const output = `\n${new Date().toLocaleTimeString()} - ${res.time}ms`;
       fs.appendFileSync(
         'ping.txt',
-        `\n${new Date().toLocaleTimeString()} - ${res.time}ms`,
+        output,
       );
+      console.log(output);
     } else {
       throw res;
     }
   } catch (e) {
     errorPings += 1;
+    const output = `\n${new Date().toLocaleTimeString()} - ERROR! ${JSON.stringify(e)}`;
     fs.appendFileSync(
       'ping.txt',
-      `\n${new Date().toLocaleTimeString()} - ERROR! ${JSON.stringify(e)}`,
+      output,
     );
+    console.log(output);
   }
 }, 1000);
 
@@ -63,14 +71,16 @@ const reportInterval = setInterval(() => {
   const averageDownload = cumulativeDownload / successfulSpeedtests;
   const averageUpload = cumulativeUpload / successfulSpeedtests;
   const averagePing = cumulativePing / successfulPings;
+  const output =     `\n${new Date().toLocaleTimeString()} - 
+  Ping success rate: ${successRatePings}
+  Speedtest success rate: ${successRateSpeedtests}
+  Average Download: ${averageDownload}
+  Average Upload = ${averageUpload}
+  Average Ping = ${averagePing}
+  `;
   fs.appendFileSync(
     'report.txt',
-    `\n${new Date().toLocaleTimeString()} - 
-Ping success rate: ${successRatePings}
-Speedtest success rate: ${successRateSpeedtests}
-Average Download: ${averageDownload}
-Average Upload = ${averageUpload}
-Average Ping = ${averagePing}
-`,
+output,
   );
+  console.log(output)
 }, 1000 * 60 * 1);
